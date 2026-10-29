@@ -1,0 +1,12 @@
+class: StudyRequest
+table: study_request
+fields:
+  senderId: int
+  receiverId: int
+  message: String?
+  status: String
+  createdAt: DateTime
+  senderName: String?
+  senderCourse: String?
+  senderAvatar: String?
+  receiverName: String?

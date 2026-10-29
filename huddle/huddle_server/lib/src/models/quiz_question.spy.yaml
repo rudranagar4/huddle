@@ -1,0 +1,8 @@
+class: QuizQuestion
+table: quiz_question
+fields:
+  quizId: int
+  questionText: String
+  options: List<String>
+  correctOptionIndex: int
+  explanation: String

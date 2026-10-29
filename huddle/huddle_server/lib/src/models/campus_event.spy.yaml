@@ -1,0 +1,15 @@
+class: CampusEvent
+table: campus_event
+fields:
+  title: String
+  description: String
+  organizer: String
+  category: String
+  date: DateTime
+  time: String
+  venue: String
+  bannerUrl: String?
+  totalSeats: int
+  registeredSeats: int
+  isFree: bool
+  price: double?

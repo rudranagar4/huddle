@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "huddle_flutter",
+            "cwd": "${workspaceFolder}/huddle_flutter",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "huddle_server",
+            "cwd": "${workspaceFolder}/huddle_server",
+            "request": "launch",
+            "type": "dart",
+            "preLaunchTask": "docker_compose_up",
+            "program": "bin/main.dart",
+            "env": {
+                "SERVERPOD_PASSWORD_database": "RcfcvSSRLiqAmqW-mKQ6n1Y2_scpl8h7"
+            },
+            "args": [
+                "--apply-migrations"
+            ]
+        }
+    ],
+    "compounds": [
+        {
+            "name": "huddle (full stack)",
+            "configurations": [
+                "huddle_server",
+                "huddle_flutter"
+            ],
+            "presentation": {
+                "order": 1
+            }
+        }
+    ]
+}

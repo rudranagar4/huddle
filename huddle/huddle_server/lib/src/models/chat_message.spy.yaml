@@ -1,0 +1,8 @@
+class: ChatMessage
+table: chat_message
+fields:
+  senderId: int
+  receiverId: int
+  message: String
+  sentAt: DateTime
+  isRead: bool

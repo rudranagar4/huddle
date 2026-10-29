@@ -1,0 +1,9 @@
+class: AppNotification
+table: app_notification
+fields:
+  studentId: int
+  title: String
+  message: String
+  type: String
+  isRead: bool
+  createdAt: DateTime

@@ -1,0 +1,10 @@
+class: Community
+table: community
+fields:
+  name: String
+  category: String
+  description: String
+  iconUrl: String?
+  bannerUrl: String?
+  memberCount: int
+  upcomingEventsCount: int

@@ -1,0 +1,6 @@
+class: EventRegistration
+table: event_registration
+fields:
+  eventId: int
+  studentId: int
+  registeredAt: DateTime

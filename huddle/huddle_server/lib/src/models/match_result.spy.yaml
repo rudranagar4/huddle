@@ -1,0 +1,7 @@
+class: MatchResult
+fields:
+  student: Student
+  matchScore: int
+  sharedSubjects: List<String>
+  sharedInterests: List<String>
+  compatibilityReason: String

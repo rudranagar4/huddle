@@ -1,0 +1,9 @@
+class: Quiz
+table: quiz
+fields:
+  title: String
+  subject: String
+  description: String
+  durationMinutes: int
+  questionCount: int
+  difficulty: String

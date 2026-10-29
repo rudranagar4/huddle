@@ -1,0 +1,16 @@
+class: Student
+table: student
+fields:
+  userId: int?
+  fullName: String
+  email: String
+  college: String
+  course: String
+  year: int
+  bio: String?
+  avatarUrl: String?
+  subjects: List<String>
+  interests: List<String>
+  studyMode: String
+  studyTime: String
+  studyStyle: String

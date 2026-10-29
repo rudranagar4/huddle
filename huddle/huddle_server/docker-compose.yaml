@@ -1,0 +1,44 @@
+services:
+  # Development services
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "8090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: huddle
+      POSTGRES_PASSWORD: "RcfcvSSRLiqAmqW-mKQ6n1Y2_scpl8h7"
+    volumes:
+      - huddle_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:6.2.6
+    ports:
+      - "8091:6379"
+    command: redis-server --requirepass "0HiMV1a_kL9t6Ue7DirXiU16IyccSiHd"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+  # Test services
+  postgres_test:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "9090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: huddle_test
+      POSTGRES_PASSWORD: "8grAM4tFhF5DldecsrVbJxWqb5LYbtsj"
+    volumes:
+      - huddle_test_data:/var/lib/postgresql/data
+
+  redis_test:
+    image: redis:6.2.6
+    ports:
+      - "9091:6379"
+    command: redis-server --requirepass "lHUIJP4vYu8Lr06D31WLN40KAHwBAnJq"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+volumes:
+  huddle_data:
+  huddle_test_data:

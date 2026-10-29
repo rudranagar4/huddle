@@ -1,0 +1,6 @@
+class: CommunityMember
+table: community_member
+fields:
+  communityId: int
+  studentId: int
+  joinedAt: DateTime

@@ -1,0 +1,57 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+Thumbs.db
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IDE & Editor files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Dart & Flutter
+.dart_tool/
+**/.dart_tool/
+.packages
+**/.packages
+.flutter-plugins
+**/.flutter-plugins
+.flutter-plugins-dependencies
+**/.flutter-plugins-dependencies
+.pub-cache/
+**/.pub-cache/
+.pub/
+**/.pub/
+pubspec_overrides.yaml
+**/pubspec_overrides.yaml
+
+# Build directories
+build/
+**/build/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/ios/Flutter/.last_build_id
+doc/api/
+**/doc/api/
+web/app/
+**/web/app/
+
+# Serverpod & Secrets
+config/passwords.yaml
+**/config/passwords.yaml
+config/firebase_service_account_key.json
+**/config/firebase_service_account_key.json
+*.env*
+!*.env.example
+
+# Symbolization / Obfuscation
+app.*.symbols
+app.*.map.json

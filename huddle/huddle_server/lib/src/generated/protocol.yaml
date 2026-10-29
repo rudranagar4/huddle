@@ -1,0 +1,56 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+bookmark:
+  - toggleBookmark:
+  - isBookmarked:
+  - getBookmarks:
+chat:
+  - getConversation:
+  - sendMessage:
+community:
+  - getCommunities:
+  - getCommunityDetails:
+  - joinCommunity:
+  - leaveCommunity:
+  - getMyCommunities:
+  - getCommunityPosts:
+  - addCommunityPost:
+event:
+  - getEvents:
+  - getEventDetails:
+  - registerForEvent:
+  - unregisterFromEvent:
+  - getMyRegisteredEvents:
+match:
+  - getSuggestedMatches:
+notification:
+  - getNotifications:
+  - markAsRead:
+  - markAllAsRead:
+profile:
+  - getProfile:
+  - getMyProfile:
+  - createOrUpdateProfile:
+  - getAllStudents:
+quiz:
+  - getQuizzes:
+  - getQuizQuestions:
+  - submitQuizAttempt:
+  - getMyQuizAttempts:
+studyRequest:
+  - sendStudyRequest:
+  - getIncomingRequests:
+  - getOutgoingRequests:
+  - getAcceptedRequests:
+  - respondToRequest:
+greeting:
+  - hello:

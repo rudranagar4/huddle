@@ -1,0 +1,10 @@
+class: CommunityPost
+table: community_post
+fields:
+  communityId: int
+  authorName: String
+  authorAvatar: String?
+  title: String
+  content: String
+  createdAt: DateTime
+  likesCount: int

@@ -1,0 +1,10 @@
+class: QuizAttempt
+table: quiz_attempt
+fields:
+  quizId: int
+  studentId: int
+  score: int
+  totalQuestions: int
+  correctAnswers: int
+  wrongAnswers: int
+  completedAt: DateTime

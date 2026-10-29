@@ -1,0 +1,7 @@
+class: Bookmark
+table: bookmark
+fields:
+  studentId: int
+  itemType: String
+  itemId: int
+  createdAt: DateTime
